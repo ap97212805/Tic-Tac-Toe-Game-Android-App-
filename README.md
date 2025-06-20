@@ -2,7 +2,9 @@
 
 An interactive two-player Tic Tac Toe game built using **Java** and **Android Studio**. This app demonstrates core Android development skills including UI design, activity lifecycle management, and basic game logic implementation.
 
+
 ---
+
 
 ## 🎮 Features
 
@@ -12,7 +14,9 @@ An interactive two-player Tic Tac Toe game built using **Java** and **Android St
 - Clean and responsive UI
 - Compatible with most Android devices
 
+
 ---
+
 
 ## 🛠️ Tech Stack
 
@@ -21,7 +25,9 @@ An interactive two-player Tic Tac Toe game built using **Java** and **Android St
 - **Platform:** Android SDK  
 - **Tools:** XML Layout, Drawable resources
 
+
 ---
+
 
 ## 📱 Screenshots
 
