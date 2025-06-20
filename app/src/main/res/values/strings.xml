@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ajeet</string>
+    <string name="restart">Restart</string>
+    <string name="resit">Enter Name</string>
+    <string name="login">NEXT \ Skip</string>
+    <string name="win">WINNER IS : </string>
+    <string name="welcome">WELCOME TO TIC TOC TOE GAME</string>
+</resources>

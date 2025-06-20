@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/txt_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello World!"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="@color/gray2"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_marginTop="-4dp"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:onClick="check"
+            android:textSize="50sp"
+            android:textColor="@color/red"
+            android:backgroundTint="@color/black"
+            app:shapeAppearance="@style/ThemeOverlay.Material3.AutoCompleteTextView.FilledBox" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_marginTop="-4dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="12dp"
+            android:onClick="check"
+            android:textSize="50sp"
+            android:textColor="@color/red"
+            android:backgroundTint="@color/black"
+            app:shapeAppearance="@style/ThemeOverlay.Material3.AutoCompleteTextView.FilledBox"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_marginTop="-4dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="12dp"
+            android:onClick="check"
+            android:textSize="50sp"
+            android:textColor="@color/red"
+            android:backgroundTint="@color/black"
+            app:shapeAppearance="@style/ThemeOverlay.Material3.AutoCompleteTextView.FilledBox"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_marginBottom="15dp"
+            android:onClick="check"
+            android:textSize="50sp"
+            android:textColor="@color/red"
+            android:backgroundTint="@color/black"
+            app:shapeAppearance="@style/ThemeOverlay.Material3.AutoCompleteTextView.FilledBox"/>
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="12dp"
+            android:onClick="check"
+            android:textSize="50sp"
+            android:textColor="@color/red"
+            android:backgroundTint="@color/black"
+            app:shapeAppearance="@style/ThemeOverlay.Material3.AutoCompleteTextView.FilledBox"/>
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="12dp"
+            android:onClick="check"
+            android:textSize="50sp"
+            android:textColor="@color/red"
+            android:backgroundTint="@color/black"
+            app:shapeAppearance="@style/ThemeOverlay.Material3.AutoCompleteTextView.FilledBox"/>
+
+        <Button
+            android:id="@+id/btn7"
+            android:onClick="check"
+            android:textSize="50sp"
+            android:textColor="@color/red"
+            android:backgroundTint="@color/black"
+            android:layout_marginBottom="-4dp"
+            app:shapeAppearance="@style/ThemeOverlay.Material3.AutoCompleteTextView.FilledBox"/>
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_marginStart="12dp"
+            android:onClick="check"
+            android:textSize="50sp"
+            android:textColor="@color/red"
+            android:layout_marginBottom="-4dp"
+            android:backgroundTint="@color/black"
+            app:shapeAppearance="@style/ThemeOverlay.Material3.AutoCompleteTextView.FilledBox"/>
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="-4dp"
+            android:onClick="check"
+            android:textSize="50sp"
+            android:textColor="@color/red"
+            android:backgroundTint="@color/black"
+            app:shapeAppearance="@style/ThemeOverlay.Material3.AutoCompleteTextView.FilledBox"/>
+
+    </GridLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+
+        android:text="@string/restart"
+        android:id="@+id/btn_restart"/>
+
+</LinearLayout>
