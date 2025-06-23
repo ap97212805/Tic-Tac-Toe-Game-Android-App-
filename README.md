@@ -48,15 +48,14 @@ Click ▶️ to run on emulator or physical device
 🖼️ Screenshots
 
 (Add your screenshots in a folder named /screenshots/ and update below)
+![Screenshot_2025-06-23-07-59-13-67_6def0cc188edcb5624a24072fd4d39cb](https://github.com/user-attachments/assets/40a02a37-12ed-4a6c-8b0e-064529882a9d)
+![Screenshot_2025-06-23-08-00-17-84_6def0cc188edcb5624a24072fd4d39cb](https://github.com/user-attachments/assets/d37173fa-6496-4586-a568-3165680022a7)
+![Screenshot_2025-06-23-07-52-44-69_6def0cc188edcb5624a24072fd4d39cb](https://github.com/user-attachments/assets/8227abf3-6629-4eeb-aa65-5931a4df1752)
+![Screenshot_2025-06-23-07-52-38-70_6def0cc188edcb5624a24072fd4d39cb](https://github.com/user-attachments/assets/302f2341-b995-4009-bf44-7614506bccac)
+![Screenshot_2025-06-23-08-00-10-19_6def0cc188edcb5624a24072fd4d39cb](https://github.com/user-attachments/assets/95088c4b-12ee-45c9-9e39-1b3e9ec5314c)
 
-![Screenshot_2025-06-23-08-00-10-19_6def0cc188edcb5624a24072fd4d39cb](https://github.com/user-attachments/assets/ec09b8da-0755-400e-81ac-ab89b7b12d58)
 
-![Screenshot_2025-06-23-07-52-38-70_6def0cc188edcb5624a24072fd4d39cb](https://github.com/user-attachments/assets/91c57be1-f0db-44a2-92a9-ab7da5fcf5b5)
 
-![Screenshot_2025-06-23-07-52-44-69_6def0cc188edcb5624a24072fd4d39cb](https://github.com/use![Screenshot_2025-06-23-08-00-17-84_6def0cc188edcb5624a24072fd4d39cb](https://github.com/user-attachments/assets/4d6df0d6-24a9-4c0d-8cc7-d4379a3ab48e)
-r-attachments/assets/6108208e-866c-42a6-8879-06f2f16994a8)
-
-![Screenshot_2025-06-23-07-59-13-67_6def0cc188edcb5624a24072fd4d39cb](https://github.com/user-attachments/assets/a9873ab4-63de-40d5-b0ae-fedd1db40b56)
 
 🛠️ Tech Stack
 
