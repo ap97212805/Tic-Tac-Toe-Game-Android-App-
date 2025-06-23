@@ -1,4 +1,7 @@
 🕹️ Tic-Tac-Toe Game - Android App
+A simple and interactive Tic-Tac-Toe Android app built with Java and XML in Android Studio. Two-player mode with clean UI and reset functionality.
+android, java, game, tic-tac-toe, android-app, beginner-project, mobile-game
+
 
 This is a simple and interactive Tic-Tac-Toe game built using Java and XML in Android Studio. The game allows two players to play turn-by-turn on a 3x3 grid, displaying the winner and allowing resets.
 
