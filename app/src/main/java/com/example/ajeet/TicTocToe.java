@@ -2,6 +2,7 @@ package com.example.ajeet;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,19 +34,26 @@ public class TicTocToe extends AppCompatActivity {
 
         Intent iNext;
         iNext = new Intent(TicTocToe.this, MainActivity.class);
-
+        
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 String f = fname.getText().toString();
-                iNext.putExtra("title1",f);
                 String s = sname.getText().toString();
-                iNext.putExtra("title2",s);
 
+                // Save names
+                SharedPreferences prefs = getSharedPreferences("GameData", MODE_PRIVATE);
+                prefs.edit()
+                        .putString("player1", f)
+                        .putString("player2", s)
+                        .apply();
+
+                iNext.putExtra("title1", f);
+                iNext.putExtra("title2", s);
                 startActivity(iNext);
             }
         });
+
 
 
 
