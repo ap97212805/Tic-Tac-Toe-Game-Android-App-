@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Ajeet</string>
+    <string name="app_name">Tic Tac Toe</string>
     <string name="restart">Restart</string>
     <string name="resit">Enter Name</string>
     <string name="login">NEXT \ Skip</string>
