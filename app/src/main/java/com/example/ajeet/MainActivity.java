@@ -2,6 +2,7 @@ package com.example.ajeet;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -17,6 +18,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+    String player1, player2;
+    TextView txt_view;
+
 //    <---------- take variable ------------->
 
     Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
@@ -31,42 +35,46 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+        txt_view = findViewById(R.id.txt_view);
 
-        //        <-----------fetch the data from registration from ----------------->
+        // Load names from SharedPreferences
+        SharedPreferences prefs = getSharedPreferences("GameData", MODE_PRIVATE);
+        player1 = prefs.getString("player1", null);
+        player2 = prefs.getString("player2", null);
+
+        // If coming directly from TicTocToe, get from intent and save
         Intent fromact = getIntent();
-        String title1 = fromact.getStringExtra("title1");
-        String title2 = fromact.getStringExtra("title2");
+        if (fromact.hasExtra("title1") && fromact.hasExtra("title2")) {
+            player1 = fromact.getStringExtra("title1");
+            player2 = fromact.getStringExtra("title2");
 
+            // Save to SharedPreferences
+            prefs.edit()
+                    .putString("player1", player1)
+                    .putString("player2", player2)
+                    .apply();
+        }
 
-        TextView txt_view = findViewById(R.id.txt_view);
-        txt_view.setText( title1 + " v/s " + title2);
+        if (player1 == null) player1 = "Player 1";
+        if (player2 == null) player2 = "Player 2";
 
-
-
-//        <------------- call init function for get button ID ------------------>
+        txt_view.setText(player1 + " v/s " + player2);
 
         init();
-        Button btn_restart;
 
-        btn_restart = findViewById(R.id.btn_restart);
-        btn_restart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                newGame();
-                Toast.makeText(MainActivity.this, "Restart Successfully", Toast.LENGTH_SHORT).show();
-
-                winner("Restart game Successfully");
-
-            }
-        });
-
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        findViewById(R.id.btn_restart).setOnClickListener(v -> {
+            newGame();
+            Toast.makeText(MainActivity.this, "Restart Successfully", Toast.LENGTH_SHORT).show();
         });
     }
+
+
+//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+//            return insets;
+//        });
+//    }
 
 
 
@@ -197,6 +205,10 @@ public void check(View view)
         btn9.setText("");
         flag = 0;
         cout = 0;
+
+//        TextView txt_view = findViewById(R.id.txt_view);
+        txt_view.setText(player1 + " v/s " + player2);
+
     }
 
 }
